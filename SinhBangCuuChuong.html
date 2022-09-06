@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let table, i, j
+    table = "<table border='1' width='300' cellspacing='0' cellpadding='3' style='width: 1500px;height: 400px'>"
+    for (i = 1; i <= 9; i++) {
+        table = table + "<tr>"
+        for (j = 1; j <= 9; j++) {
+            table = table + "<td style='text-align: center'>" + j + 'x' + +i + '=' + i * j + "</td>"
+        }
+        table = table + "<tr>"
+    }
+    table = table + "</table>"
+    document.write(table)
+
+    // let table,i,j
+    //     table = "<table border='1' width='300' cellspacing='0' cellpadding='3' style='width: 1500px;height: 400px'>"
+    // i = j = 1
+    //     while (i<=9){
+    // table = table + "<tr>"
+    //         while (j<=9){
+    //     table = table + "<td>"+i +'x'+ +j +'=' +i*j+"</td>"
+    //             j++
+    //         }
+    //         table = table + "</tr>"
+    //         j=1
+    //         i++
+    //     }
+    //     table =table + "</table>"
+    // document.write(table)
+</script>
+</body>
+</html>
